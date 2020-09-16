@@ -12,7 +12,6 @@
       }
     },
     "extends": [
-      "eslint:recommended",
       "plugin:prettier/recommended"
     ],
     "globals": {
