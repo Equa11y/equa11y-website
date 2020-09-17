@@ -4,8 +4,9 @@ import { hot } from 'react-hot-loader/root';
 import { Route, Switch } from 'react-router-dom';
 import ExamplePage from './ExamplePage';
 import NavBar from './NavBar';
-import Main from './Main';
 import About from './About';
+import Footer from './Footer';
+import Main from './Main';
 import Docs from './Docs';
 import Links from './Links';
 
@@ -36,6 +37,7 @@ class App extends React.Component {
             </Route>
           </Switch>
         </div>
+        <Footer />
       </div>
     );
   }
