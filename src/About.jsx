@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import taylor from './images/taylor.jpg';
 import heather from './images/heather.jpg';
@@ -73,4 +74,11 @@ export default function About() {
       </section>
     </main>
   );
+=======
+/* eslint-disable prettier/prettier */
+import React from 'react';
+
+export default function About() {
+  return <div>About</div>;
+>>>>>>> 1f3c782393062f3b253f5c676868c459d9e4f2ad
 }
