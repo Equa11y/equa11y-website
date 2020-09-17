@@ -11,7 +11,7 @@ export default function NavBar() {
         <button className="wally" role="button">
           <img
             src={wa11y}
-            alt="dog with name equally"
+            alt="dog with name wally"
             width="100"
             height="100"
           ></img>

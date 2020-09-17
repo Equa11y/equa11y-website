@@ -96,3 +96,18 @@ body {
     background-color: cornflowerblue;
   }
 }
+
+.cards {
+  border: solid;
+  height: 400px;
+  width: 400px;
+}
+
+.bad-contrast {
+  background-color: #000000;
+  color: #242424;
+}
+
+.large-text {
+  font-size: 50px;
+}
