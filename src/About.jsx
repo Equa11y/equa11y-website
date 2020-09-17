@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import taylor from './images/taylor.jpg';
 import heather from './images/heather.jpg';
@@ -28,11 +27,11 @@ export default function About() {
           <h3>Taylor Riley Du</h3>
           <h4>Software Engineer</h4>
           <p>
-            Taylor has always been passionate about access and inclusion. She
-            spent 5 years practicing as a pediatric physical therapist before
-            transitioning to software engineering. She loves cold brew coffee,
-            knitting, sewing, weaving, and traveling. She currently resides in
-            her hometown of Baltimore with her husband, Robert, and calico cat,
+            Taylor has always been passionate about accessibility and spent 5
+            years practicing as a pediatric physical therapist before
+            transitioning to software engineering. She is a lover of cold brew
+            coffee, knitting, sewing, and hiking. She currently resides in her
+            hometown of Baltimore with her husband, Robert, and calico cat,
             Frankie.
           </p>
         </div>
@@ -74,11 +73,4 @@ export default function About() {
       </section>
     </main>
   );
-=======
-/* eslint-disable prettier/prettier */
-import React from 'react';
-
-export default function About() {
-  return <div>About</div>;
->>>>>>> 1f3c782393062f3b253f5c676868c459d9e4f2ad
 }
