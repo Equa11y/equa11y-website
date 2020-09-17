@@ -20,7 +20,6 @@
     "url": "https://github.com/sull364/equa11y-website/issues"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.21",
