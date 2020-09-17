@@ -24,15 +24,14 @@ export default function NavBar() {
           <Link to="/example">
             <div>Example Page</div>
           </Link>
-
-          <Link to="docs">
-            <div>Docs</div>
-          </Link>
           <Link to="links">
             <div>Useful Links</div>
           </Link>
           <Link to="about">
             <div>About</div>
+          </Link>
+          <Link to="/">
+            <div>Home</div>
           </Link>
         </div>
       </div>
