@@ -1,4 +1,53 @@
 .navbar {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  background-color: sandybrown;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  outline: none;
+  color: blue;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown:hover .dropbtn {
+  background-color: orange;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content div:hover {
+  background-color: yellow;
+}
+
+.wally:hover {
+  opacity: 0.5;
+}
+
+.title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 75px;
 }
