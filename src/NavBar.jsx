@@ -22,16 +22,24 @@ export default function NavBar() {
         <button className="dropbtn">Menu</button>
         <div className="dropdown-content">
           <Link to="/example">
-            <div>Example Page</div>
+            <button className="content">
+              <div>Example Page</div>
+            </button>
           </Link>
           <Link to="links">
-            <div>Useful Links</div>
+            <button className="content">
+              <div>Useful Links</div>
+            </button>
           </Link>
           <Link to="about">
-            <div>About</div>
+            <button className="content">
+              <div>About</div>
+            </button>
           </Link>
           <Link to="/">
-            <div>Home</div>
+            <button className="content">
+              <div>Home</div>
+            </button>
           </Link>
         </div>
       </div>

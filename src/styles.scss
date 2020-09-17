@@ -38,14 +38,23 @@ body {
 // .dropdown:hover .dropbtn {
 // }
 
+.content {
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  width: 100%;
+}
+
 .dropdown-content {
   display: none;
   font-size: 20px;
   position: absolute;
-  background-color: lightgray;
-  min-width: 160px;
+  background-color: white;
+  height: 100px;
+  min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 4px;
 }
 
 .dropdown:hover .dropdown-content {
