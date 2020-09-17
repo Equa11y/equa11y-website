@@ -1,6 +1,8 @@
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
 import NavBar from './NavBar';
+import About from './About';
+import Footer from './Footer';
 
 class App extends React.Component {
   render() {
@@ -9,6 +11,8 @@ class App extends React.Component {
       <>
         <NavBar />
         <h1>Hello {name}</h1>
+        <About />
+        <Footer />
       </>
     );
   }
