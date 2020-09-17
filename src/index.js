@@ -1,9 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+/* eslint-disable prettier/prettier */
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './styles.scss';
 
-// import "./styles.css";
-// import "./styles.scss";
-
-const mountNode = document.getElementById("app");
+const mountNode = document.getElementById('app');
 ReactDOM.render(<App name="Friend" />, mountNode);
