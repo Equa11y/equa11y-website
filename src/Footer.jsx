@@ -3,7 +3,6 @@ import React from 'react';
 const stickyFooter = {
   backgroundColor: '#4C91B8',
   padding: '20px',
-  position: 'fixed',
   left: '0',
   bottom: '0',
   height: '60px',

@@ -19,7 +19,7 @@ h4 {
 }
 
 p {
-  color: black;
+  color: #626366;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -56,6 +56,11 @@ li {
 .bio-container {
   display: flex;
   justify-content: space-around;
+}
+
+.bio {
+  width: 15%;
+  padding: 20px;
 }
 
 .footer-links {
