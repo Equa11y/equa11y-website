@@ -7,7 +7,7 @@ export default function NavBar() {
   return (
     <div className="navbar">
       <Link to="/">
-        <button className="wally">
+        <button className="wally" role="button">
           <img
             src={wa11y}
             alt="dog with name equally"
