@@ -35,6 +35,7 @@ body {
   margin-right: 60px;
   border: none;
 }
+
 // .dropdown:hover .dropbtn {
 // }
 
@@ -46,12 +47,14 @@ body {
 }
 
 .dropdown-content {
-  display: none;
   font-size: 20px;
   position: absolute;
+  margin-right: 250px;
+  padding: 5px;
+
   background-color: white;
   height: 100px;
-  min-width: 120px;
+  min-width: 110px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 4px;

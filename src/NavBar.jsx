@@ -1,9 +1,10 @@
 /* eslint-disable prettier/prettier */
-import React from 'react';
+import React, { useState } from 'react';
 import wa11y from './images/wa11y.png';
 import { Link } from 'react-router-dom';
 
 export default function NavBar() {
+  const [isClicked, setIsClicked] = useState(false);
   return (
     <div className="navbar">
       <Link to="/">
@@ -19,29 +20,33 @@ export default function NavBar() {
 
       <div className="title">Equa11y</div>
       <div className="dropdown">
-        <button className="dropbtn">Menu</button>
-        <div className="dropdown-content">
-          <Link to="/example">
-            <button className="content">
-              <div>Example Page</div>
-            </button>
-          </Link>
-          <Link to="links">
-            <button className="content">
-              <div>Useful Links</div>
-            </button>
-          </Link>
-          <Link to="about">
-            <button className="content">
-              <div>About</div>
-            </button>
-          </Link>
-          <Link to="/">
-            <button className="content">
-              <div>Home</div>
-            </button>
-          </Link>
-        </div>
+        <button onClick={() => setIsClicked(!isClicked)} className="dropbtn">
+          Menu
+        </button>
+        {isClicked && (
+          <div className="dropdown-content">
+            <Link to="/example">
+              <button onClick={() => setIsClicked(false)} className="content">
+                <div>Example Page</div>
+              </button>
+            </Link>
+            <Link to="links">
+              <button onClick={() => setIsClicked(false)} className="content">
+                <div>Useful Links</div>
+              </button>
+            </Link>
+            <Link to="about">
+              <button onClick={() => setIsClicked(false)} className="content">
+                <div>About</div>
+              </button>
+            </Link>
+            <Link to="/">
+              <button onClick={() => setIsClicked(false)} className="content">
+                <div>Home</div>
+              </button>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );
