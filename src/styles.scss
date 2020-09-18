@@ -280,6 +280,57 @@ body {
   }
 }
 
+// Morph button
+.morph-button {
+  background-color: white;
+  border-radius: 28px;
+  border: 1px solid black;
+  cursor: pointer;
+  color: black;
+  font-family: Arial;
+  font-size: 18px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+
+.good-button {
+  background-color: navy;
+  border-radius: 50px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 24px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #c70067;
+}
+
+.bad-button {
+  background-color: #ff5bb0;
+  border-radius: 28px;
+  border: 1px solid #ee1eb5;
+  display: inline-block;
+  cursor: pointer;
+  color: orangered;
+  font-family: Arial;
+  font-size: 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #c70067;
+}
+
+// Justified text
+.over-justified {
+  text-align: justify;
+  padding: 10px;
+}
+
+.left-justified {
+  text-align: left;
+  padding: 10px;
+}
+
 .plain-button {
   border: none;
   padding: 0;

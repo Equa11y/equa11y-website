@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import ColorContrast from './components/ColorContrast';
 import IntroCard from './components/IntroCard';
+import MorphButton from './components/MorphButton';
+import HeaderOrganization from './components/HeaderOrganization';
+import Justified from './components/ExcessivelyJustified';
 import InnerSiteFooter from './components/Footer_bad';
 import ExampleAbout from './components/ExampleAbout';
 
@@ -43,6 +46,9 @@ export default function ExamplePage() {
           <div id="innerMain">
             <IntroCard />
             <ColorContrast />
+            <MorphButton />
+            <HeaderOrganization />
+            <Justified />
           </div>
           <InnerSiteFooter />
         </div>
