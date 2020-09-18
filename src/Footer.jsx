@@ -9,6 +9,7 @@ export default function Footer() {
           <a
             className="contact-links"
             href="https://github.com/oslabs-beta/Equa11y"
+            target="_blank"
           >
             GitHub
           </a>
@@ -17,6 +18,7 @@ export default function Footer() {
           <a
             className="contact-links"
             href="https://www.npmjs.com/package/equa11y"
+            target="_blank"
           >
             npm
           </a>
