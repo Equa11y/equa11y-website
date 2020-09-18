@@ -7,6 +7,7 @@ import HeaderOrganization from './components/HeaderOrganization';
 import Justified from './components/ExcessivelyJustified';
 import InnerSiteFooter from './components/Footer_bad';
 import ExampleAbout from './components/ExampleAbout';
+import MorphReferBy from './components/MorphReferBy';
 
 export default function ExamplePage() {
   const [isClicked, setIsClicked] = useState(false);
@@ -42,17 +43,19 @@ export default function ExamplePage() {
         </div>
       </div>
       {!isClicked && (
-        <div id="innerMain">
-          <IntroCard />
-          <ColorContrast />
-          <MorphButton />
-          <HeaderOrganization />
-          <Justified />
+        <div>
+          <div id="innerMain">
+            <IntroCard />
+            <ColorContrast />
+            <MorphButton />
+            <HeaderOrganization />
+            <Justified />
+            <MorphReferBy />
+          </div>
+          <InnerSiteFooter />
         </div>
       )}
-
       {isClicked && <ExampleAbout />}
-      <InnerSiteFooter />
     </div>
   );
 }
