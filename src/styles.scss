@@ -103,6 +103,8 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    display: flex;
+
     li {
       float: left;
       a {
@@ -112,8 +114,14 @@ body {
         padding: 14px 16px;
         text-decoration: none;
       }
-      a:hover {
+      button:hover {
         background-color: #111;
+      }
+      button {
+        color: white;
+        margin: 10px;
+        margin-left: 20px;
+        margin-right: 40px;
       }
     }
   }
@@ -128,6 +136,21 @@ body {
   column-gap: 20px;
   row-gap: 20px;
   margin: 30px;
+}
+
+.about-example-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cards-big {
+  border: solid;
+  height: 800px;
+  width: 800px;
+  font-size: 30px;
+  padding: 20px;
 }
 
 .cards {
@@ -217,7 +240,6 @@ body {
   background-color: #4c91b8;
   height: 60px;
   width: 100%;
-
   background-position: 0% 0%;
   position: fixed;
   bottom: 0pt;
@@ -227,6 +249,7 @@ body {
 .footer {
   .footer-links {
     display: flex;
+    list-style-type: none;
     justify-content: center;
     align-items: center;
   }
