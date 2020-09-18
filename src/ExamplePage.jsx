@@ -39,14 +39,16 @@ export default function ExamplePage() {
         </div>
       </div>
       {!isClicked && (
-        <div id="innerMain">
-          <IntroCard />
-          <ColorContrast />
+        <div>
+          <div id="innerMain">
+            <IntroCard />
+            <ColorContrast />
+          </div>
+          <InnerSiteFooter />
         </div>
       )}
 
       {isClicked && <ExampleAbout />}
-      <InnerSiteFooter />
     </div>
   );
 }
