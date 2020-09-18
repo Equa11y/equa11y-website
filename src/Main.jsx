@@ -1,5 +1,5 @@
-import React from "react";
-import wa11y from "./images/wa11y.png";
+import React from 'react';
+import wa11y from './images/wa11y.png';
 
 export default function Main() {
   return (
@@ -39,7 +39,7 @@ export default function Main() {
       <div id="wa11yDog" class="mainChild">
         <img
           src={wa11y}
-          alt="dog with name equally"
+          alt="dog with name wally"
           width="500"
           height="500"
         ></img>

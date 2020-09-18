@@ -7,7 +7,7 @@ import NavBar from './NavBar';
 import About from './About';
 import Footer from './Footer';
 import Main from './Main';
-import Docs from './Docs';
+
 import Links from './Links';
 
 class App extends React.Component {
@@ -25,9 +25,7 @@ class App extends React.Component {
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/docs">
-              <Docs />
-            </Route>
+
             <Route path="/links">
               <Links />
             </Route>

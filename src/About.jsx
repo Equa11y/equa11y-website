@@ -6,7 +6,7 @@ import sully from './images/sully.jpg';
 
 export default function About() {
   return (
-    <main>
+    <main className="about">
       <nav aria-label="breadcrumbs" className="breadcrumbs">
         <span>
           <a className="breadcrumb-links" href="/">
@@ -15,7 +15,7 @@ export default function About() {
         </span>
         <span> > </span>
         <span>
-          <a className="breadcrumb-links" href="/About/">
+          <a className="breadcrumb-links" href="/about">
             About
           </a>
         </span>
