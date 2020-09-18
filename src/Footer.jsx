@@ -1,18 +1,9 @@
-import React from "react";
-
-const stickyFooter = {
-  backgroundColor: "#4C91B8",
-  padding: "20px",
-  left: "0",
-  bottom: "0",
-  height: "60px",
-  width: "100%",
-  position: "fixed",
-};
+/* eslint-disable prettier/prettier */
+import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="footer" style={stickyFooter}>
+    <footer className="footer" id="footer-style">
       <ul className="footer-links" aria-labelledby="contact-links">
         <li>
           <a

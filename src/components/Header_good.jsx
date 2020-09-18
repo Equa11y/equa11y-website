@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function InnerSiteNav() {
   return (
@@ -9,7 +9,9 @@ export default function InnerSiteNav() {
       <div id="innerNav">
         <ul>
           <li>
-            <a class="active" href="#home">Home</a>
+            <a class="active" href="#home">
+              Home
+            </a>
           </li>
           <li>
             <a href="#about">About</a>
