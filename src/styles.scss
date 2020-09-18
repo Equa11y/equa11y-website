@@ -2,6 +2,13 @@ body {
   margin: 0;
 }
 
+// .container {
+//   width: 100%;
+//   height: 100%;
+//   padding: 0;
+//   margin: 0;
+// }
+
 // navbar top of all pages
 .navbar {
   display: flex;
@@ -76,7 +83,7 @@ body {
 }
 
 // temlate for main.jsx
-#main {
+.main {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
@@ -89,6 +96,7 @@ body {
   }
 }
 
+// inner site header and navbar
 .innerHeader {
   ul {
     list-style-type: none;
@@ -96,6 +104,8 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    display: flex;
+
     li {
       float: left;
       a {
@@ -105,10 +115,32 @@ body {
         padding: 14px 16px;
         text-decoration: none;
       }
-      a:hover {
+      button:hover {
         background-color: #111;
       }
+      button {
+        color: white;
+        margin: 10px;
+        margin-left: 20px;
+        margin-right: 40px;
+      }
     }
+  }
+}
+
+// footer for the inner site
+.innerFooter {
+  display: grid;
+  justify-content: center;
+  background-color: #333;
+  color: white;  
+  padding: 14px 16px;
+  width: 100%;
+  .footerBad {
+    font-size: 10px;
+  }
+  .footerGood {
+    font-size: 20px;
   }
 }
 
@@ -123,6 +155,21 @@ body {
   margin: 30px;
 }
 
+.about-example-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cards-big {
+  border: solid;
+  height: 800px;
+  width: 800px;
+  font-size: 30px;
+  padding: 20px;
+}
+
 .cards {
   border: solid;
   height: 400px;
@@ -132,6 +179,11 @@ body {
 .bad-contrast {
   background-color: #000000;
   color: #242424;
+}
+
+.good-contrast {
+  background-color: #000000;
+  color: white;
 }
 
 .large-text {
@@ -201,10 +253,21 @@ body {
   padding: 20px;
 }
 
+#footer-style {
+  background-color: #4c91b8;
+  height: 60px;
+  width: 100%;
+  background-position: 0% 0%;
+  position: fixed;
+  bottom: 0pt;
+  left: 0pt;
+}
+
 .footer {
   .footer-links {
     display: flex;
-    justify-content: center;
+    list-style-type: none;
+    justify-content: space-evenly;
     align-items: center;
   }
 
@@ -266,4 +329,12 @@ body {
 .left-justified {
   text-align: left;
   padding: 10px;
+}
+
+.plain-button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+  outline: none;
 }
