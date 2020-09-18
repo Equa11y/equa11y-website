@@ -13,7 +13,7 @@ export default function About() {
             Home
           </a>
         </span>
-        <span> > </span>
+        <span> {'>'} </span>
         <span>
           <a className="breadcrumb-links" href="/about">
             About
