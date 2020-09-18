@@ -188,11 +188,13 @@ body {
 }
 
 .bad-contrast {
+  border-radius: 10px;
   background-color: #000000;
   color: #242424;
 }
 
 .good-contrast {
+  border-radius: 10px;
   background-color: #000000;
   color: white;
 }

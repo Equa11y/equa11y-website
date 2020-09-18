@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useMorph } from 'react-morph';
 
-export default function ColorContrastBad() {
+export default function ColorContrast() {
   const [toggle, setToggle] = useState(true);
   const morph = useMorph();
 
