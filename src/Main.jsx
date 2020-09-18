@@ -4,7 +4,7 @@ import wa11y from './images/wa11y.png';
 export default function Main() {
   return (
     <div className="main">
-      <div id="introduction" class="mainChild">
+      <div id="introduction" className="mainChild">
         <h2>Welcome to Equa11y!</h2>
         <p>
           We believe the internet is for everyone. However, there are many
@@ -13,7 +13,7 @@ export default function Main() {
           make the internet a more accessible place.
         </p>
       </div>
-      <div id="useSite" class="mainChild">
+      <div id="useSite" className="mainChild">
         <h2>What you'll find...</h2>
         <p>
           Team equa11y is all about sharing our passion for web accessibility.
@@ -30,13 +30,13 @@ export default function Main() {
         <p>A medium size note about accessibility and why it's important.</p>
       </div>
       {/* add image here */}
-      <div id="image1" class="mainChild">
+      <div id="image1" className="mainChild">
         <center>
           <p>add image</p>
         </center>
       </div>
       {/* add image here */}
-      <div id="wa11yDog" class="mainChild">
+      <div id="wa11yDog" className="mainChild">
         <img
           src={wa11y}
           alt="dog with name wally"
@@ -44,7 +44,7 @@ export default function Main() {
           height="500"
         ></img>
       </div>
-      <div id="introWa11y" class="mainChild">
+      <div id="introWa11y" className="mainChild">
         <h2>This is Wa11y...</h2>
         <p>
           The Equa11y dog. He's here to guide you on your accessibility journey.

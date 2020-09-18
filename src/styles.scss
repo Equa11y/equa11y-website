@@ -2,6 +2,7 @@ body {
   margin: 0;
 }
 
+// navbar top of all pages
 .navbar {
   display: flex;
   color: white;
@@ -12,32 +13,30 @@ body {
   background-color: #5b94b5;
   width: 100%;
   height: 100px;
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .wally {
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 30px;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin-right: 60px;
+    border: none;
+  }
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
 
-.wally {
-  background-color: transparent;
-  border: none;
-  margin-left: 20px;
-}
-
-.dropdown .dropbtn {
-  font-size: 30px;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin-right: 60px;
-  border: none;
-}
-
-// .dropdown:hover .dropbtn {
-// }
 
 .content {
   border: none;
@@ -78,7 +77,8 @@ body {
   font-size: 75px;
 }
 
-.main {
+// temlate for main.jsx
+#main {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
@@ -89,12 +89,40 @@ body {
   p {
     font-size: 20px;
   }
-  // #mainChild {
+}
 
-  // }
-  .introduction {
-    background-color: cornflowerblue;
+.innerHeader {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    li {
+      float: left;
+      a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
+      a:hover {
+      background-color: #111;
+      }
+    }
   }
+}
+
+// inner website with transitions
+#innerMain {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  justify-content: space-around;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin: 30px;
 }
 
 .cards {
@@ -112,6 +140,7 @@ body {
   font-size: 50px;
 }
 
+// about page
 .about {
   h2 {
     color: #4c91b8;
@@ -174,16 +203,19 @@ body {
   padding: 20px;
 }
 
-.footer-links {
+.footer {
+  .footer-links {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  }
 
-.contact-links {
+  .contact-links {
   color: white;
   font-weight: bold;
   font-size: 1.125em;
   text-decoration: none;
   cursor: pointer;
+  }
 }
+
