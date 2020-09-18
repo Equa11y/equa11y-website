@@ -1,37 +1,8 @@
-h2 {
-  color: #4c91b8;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 2em;
+body {
+  margin: 0;
 }
 
-h3 {
-  color: #4c91b8;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 1.125em;
-}
-
-h4 {
-  color: black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-}
-
-p {
-  color: #626366;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-li {
-  list-style: none;
-  color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 1.125em;
-  padding: 20px;
-}
-
+// navbar top of all pages
 .navbar {
   display: flex;
   color: white;
@@ -42,40 +13,50 @@ li {
   background-color: #5b94b5;
   width: 100%;
   height: 100px;
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .wally {
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 30px;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin-right: 60px;
+    border: none;
+  }
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
 
-.wally {
+
+.content {
+  border: none;
   background-color: transparent;
-  border: none;
-  margin-left: 20px;
+  font-size: 15px;
+  width: 100%;
 }
-
-.dropdown .dropbtn {
-  font-size: 30px;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin-right: 60px;
-  border: none;
-}
-// .dropdown:hover .dropbtn {
-// }
 
 .dropdown-content {
-  display: none;
   font-size: 20px;
   position: absolute;
-  background-color: lightgray;
-  min-width: 160px;
+  margin-right: 250px;
+  padding: 5px;
+
+  background-color: white;
+  height: 100px;
+  min-width: 110px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 4px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -96,7 +77,8 @@ li {
   font-size: 75px;
 }
 
-.main {
+// temlate for main.jsx
+#main {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
@@ -107,12 +89,9 @@ li {
   p {
     font-size: 20px;
   }
-  .introduction {
-    background-color: cornflowerblue;
-  }
 }
 
-#innerHeader {
+.innerHeader {
   ul {
     list-style-type: none;
     margin: 0;
@@ -135,9 +114,8 @@ li {
   }
 }
 
-
-
-.transition-layout {
+// inner website with transitions
+#innerMain {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
@@ -147,10 +125,57 @@ li {
   margin: 30px;
 }
 
+.cards {
+  border: solid;
+  height: 400px;
+  width: 400px;
+}
 
+.bad-contrast {
+  background-color: #000000;
+  color: #242424;
+}
 
+.large-text {
+  font-size: 50px;
+}
 
+// about page
+.about {
+  h2 {
+    color: #4c91b8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+  }
 
+  h3 {
+    color: #4c91b8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.125em;
+  }
+
+  h4 {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+
+  p {
+    color: #626366;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  li {
+    list-style: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.125em;
+    padding: 20px;
+  }
+}
 
 .breadcrumbs {
   color: #626366;
@@ -178,16 +203,19 @@ li {
   padding: 20px;
 }
 
-.footer-links {
+.footer {
+  .footer-links {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  }
 
-.contact-links {
+  .contact-links {
   color: white;
   font-weight: bold;
   font-size: 1.125em;
   text-decoration: none;
   cursor: pointer;
+  }
 }
+
