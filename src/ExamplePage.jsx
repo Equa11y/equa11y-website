@@ -1,23 +1,50 @@
 /* eslint-disable prettier/prettier */
-import React from 'react';
-import ColorContrastBad from './components/ColorContrastBad';
+import React, { useState } from 'react';
+import ColorContrast from './components/ColorContrast';
 import IntroCard from './components/IntroCard';
-import InnerSiteNav from './components/Header_good'
+import ExampleAbout from './components/ExampleAbout';
 
 export default function ExamplePage() {
+  const [isClicked, setIsClicked] = useState(false);
   return (
-    <div id="innerWeb">
-       <InnerSiteNav /> 
-    <div id="innerMain">      
-      
-      <IntroCard />
-      <ColorContrastBad />
+    <div>
+      <div className="innerHeader">
+        <header>
+          <h1>Why Accessibility?</h1>
+        </header>
+        <div>
+          <ul>
+            <li>
+              <button
+                onClick={() => {
+                  setIsClicked(false);
+                }}
+                className="plain-button"
+              >
+                Home
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => {
+                  setIsClicked(true);
+                }}
+                className="plain-button"
+              >
+                About
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      {!isClicked && (
+        <div id="innerMain">
+          <IntroCard />
+          <ColorContrast />
+        </div>
+      )}
+
+      {isClicked && <ExampleAbout />}
     </div>
-    </div>
-      
   );
 }
-
-
-
-
