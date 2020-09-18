@@ -17,13 +17,13 @@ body {
     float: left;
     overflow: hidden;
   }
-  
+
   .wally {
     background-color: transparent;
     border: none;
     margin-left: 20px;
   }
-  
+
   .dropdown .dropbtn {
     font-size: 30px;
     outline: none;
@@ -35,8 +35,6 @@ body {
     border: none;
   }
 }
-
-
 
 .content {
   border: none;
@@ -101,14 +99,14 @@ body {
     li {
       float: left;
       a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
       }
       a:hover {
-      background-color: #111;
+        background-color: #111;
       }
     }
   }
@@ -205,17 +203,23 @@ body {
 
 .footer {
   .footer-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .contact-links {
-  color: white;
-  font-weight: bold;
-  font-size: 1.125em;
-  text-decoration: none;
-  cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125em;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 
+.plain-button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+}
