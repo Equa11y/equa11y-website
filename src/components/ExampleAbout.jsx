@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
+import { PieChart, Pie, Sector, Cell, LabelList } from 'recharts';
 
 export default function ExampleAbout() {
   return (
@@ -24,6 +25,16 @@ export default function ExampleAbout() {
           why it is imperative that developers are educated and try to create
           accessible websites.
         </p>
+        <div>
+          <PieChart width={800} height={400}>
+            <Pie
+              data={[
+                { name: 'Errors Caught', value: 30 },
+                { name: 'Errors Requiring Manual Testing', value: 70 },
+              ]}
+            ></Pie>
+          </PieChart>
+        </div>
       </div>
     </div>
   );
