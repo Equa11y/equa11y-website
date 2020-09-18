@@ -96,6 +96,7 @@ body {
   }
 }
 
+// inner site header and navbar
 .innerHeader {
   ul {
     list-style-type: none;
@@ -124,6 +125,22 @@ body {
         margin-right: 40px;
       }
     }
+  }
+}
+
+// footer for the inner site
+.innerFooter {
+  display: grid;
+  justify-content: center;
+  background-color: #333;
+  color: white;  
+  padding: 14px 16px;
+  width: 100%;
+  .footerBad {
+    font-size: 10px;
+  }
+  .footerGood {
+    font-size: 20px;
   }
 }
 

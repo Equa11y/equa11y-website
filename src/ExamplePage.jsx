@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import ColorContrast from './components/ColorContrast';
 import IntroCard from './components/IntroCard';
+import InnerSiteFooter from './components/Footer_bad';
 import ExampleAbout from './components/ExampleAbout';
 
 export default function ExamplePage() {
@@ -45,6 +46,7 @@ export default function ExamplePage() {
       )}
 
       {isClicked && <ExampleAbout />}
+      <InnerSiteFooter />
     </div>
   );
 }
