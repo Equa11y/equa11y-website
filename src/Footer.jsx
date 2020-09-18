@@ -1,13 +1,12 @@
-import React from "react";
+import React from 'react';
 
 const stickyFooter = {
-  backgroundColor: "#4C91B8",
-  padding: "20px",
-  left: "0",
-  bottom: "0",
-  height: "60px",
-  width: "100%",
-  position: "fixed",
+  backgroundColor: '#4C91B8',
+  padding: '20px',
+  left: '0',
+  bottom: '0',
+  height: '60px',
+  width: '100%',
 };
 
 export default function Footer() {

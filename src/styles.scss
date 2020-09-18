@@ -17,13 +17,13 @@ body {
     float: left;
     overflow: hidden;
   }
-  
+
   .wally {
     background-color: transparent;
     border: none;
     margin-left: 20px;
   }
-  
+
   .dropdown .dropbtn {
     font-size: 30px;
     outline: none;
@@ -35,8 +35,6 @@ body {
     border: none;
   }
 }
-
-
 
 .content {
   border: none;
@@ -101,14 +99,14 @@ body {
     li {
       float: left;
       a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
       }
       a:hover {
-      background-color: #111;
+        background-color: #111;
       }
     }
   }
@@ -205,17 +203,56 @@ body {
 
 .footer {
   .footer-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .contact-links {
-  color: white;
-  font-weight: bold;
-  font-size: 1.125em;
-  text-decoration: none;
-  cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125em;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 
+// Morph button
+.morph-button {
+  background-color: white;
+  border-radius: 28px;
+  border: 1px solid black;
+  cursor: pointer;
+  color: black;
+  font-family: Arial;
+  font-size: 18px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+
+.good-button {
+  background-color: navy;
+  border-radius: 50px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 24px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #c70067;
+}
+
+.bad-button {
+  background-color: #ff5bb0;
+  border-radius: 28px;
+  border: 1px solid #ee1eb5;
+  display: inline-block;
+  cursor: pointer;
+  color: orangered;
+  font-family: Arial;
+  font-size: 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #c70067;
+}
