@@ -48,7 +48,7 @@ export default function About() {
                 alt="Taylor github link"
                 src={github}
                 height="40"
-                width="70"
+                width="70"              
               ></img>
             </a>
             <a
