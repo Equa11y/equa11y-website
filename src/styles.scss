@@ -1,7 +1,9 @@
 body {
   margin: 0;
-  height: 3000px;
   min-width: 900px;
+
+  min-height: 400px;
+  margin-bottom: 100px;
 }
 
 main {
@@ -450,8 +452,8 @@ main {
   width: 100%;
   background-position: 0% 0%;
   position: fixed;
-  bottom: 0pt;
-  left: 0pt;
+  bottom: 0;
+  left: 0;
 }
 
 .footer {
