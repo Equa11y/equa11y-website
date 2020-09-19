@@ -22,8 +22,7 @@ export default function Justified() {
       {!toggle && (
         <div className="wrap box" {...morph}>
           <p>
-            Aahhhhhh. This is so much better. It's a clear block of text that has a nice pretty
-            wrap.
+            Aahhhhhh. This is so much better. A clear block of text that has a nice pretty wrap.
           </p>
         </div>
       )}
