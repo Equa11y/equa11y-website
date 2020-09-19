@@ -15,7 +15,9 @@ export default function ExamplePage() {
   const [isClicked, setIsClicked] = useState(false);
   return (
     <div id="innerPage">
-      <img id="fakeUrl" src={url} />
+      <div id="urlBar">
+        <img id="fakeUrl" src={url} />
+      </div>
       <div className="innerHeader">
         <div>
           <ul>
