@@ -113,7 +113,6 @@ main {
     overflow: hidden;
     background-color: #333;
     display: flex;
-
     li {
       float: left;
       a {
@@ -123,14 +122,18 @@ main {
         padding: 14px 16px;
         text-decoration: none;
       }
-      button:hover {
-        background-color: #111;
-      }
       button {
         color: white;
-        margin: 10px;
-        margin-left: 20px;
-        margin-right: 40px;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 14pt;
+        height: 100%;
+        transition: .2s;
+      }
+      button:hover {
+        background-color: #111;
+        transition: .2s;
       }
     }
   }
