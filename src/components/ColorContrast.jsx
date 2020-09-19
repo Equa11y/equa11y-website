@@ -11,19 +11,21 @@ export default function ColorContrast() {
       <button className="morph-button" onClick={() => setToggle(!toggle)}>
         {toggle ? 'Make it accessible!' : 'Make it inaccessible...'}
       </button>
-        {toggle && (
-          <button className="bad-contrast" {...morph}>
-            This is an example of really bad color contrast. It is very hard to
-            see what is written here...<br/>
-            <span className="large-text">Even when the text is really big!</span>
-          </button>
-        )}
-        {!toggle && (
-          <button {...morph} className="good-contrast">
-            Now that the contrast is fixed, it is easier for everyone to see!<br/>
-            <span className="large-text">Even with small text!</span>
-          </button>
-        )}
+        <div className="cardsBody">
+          {toggle && (
+            <button className="bad-contrast" {...morph}>
+              This is an example of really bad color contrast. It is very hard to
+              see what is written here...<br/>
+              <span className="large-text">Even when the text is really big!</span>
+            </button>
+          )}
+          {!toggle && (
+            <button {...morph} className="good-contrast">
+              Now that the contrast is fixed, it is easier for everyone to see!<br/>
+              <span className="large-text">Even with small text!</span>
+            </button>
+          )}
+        </div>
     </div>
   );
 }
