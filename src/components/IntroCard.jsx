@@ -4,7 +4,7 @@ import wally from '../images/wa11y.png';
 
 export default function IntroCard() {
   return (
-    <div className="cards">
+    <div className="wallyIntro">
       <img src={wally} alt="dog with name wally" height="200" width="200"></img>
       <p>
         Hey all! Wa11y the Equa11y dog here! As a reminder, some of your fellow

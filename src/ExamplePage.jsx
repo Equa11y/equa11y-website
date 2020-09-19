@@ -7,12 +7,13 @@ import HeaderOrganization from './components/HeaderOrganization';
 import Justified from './components/ExcessivelyJustified';
 import InnerSiteFooter from './components/Footer_bad';
 import ExampleAbout from './components/ExampleAbout';
-import MorphReferBy from './components/MorphReferBy';
+import ReferBy from './components/ReferBy';
+import HorizontalScroll from './components/HorizontalScroll';
 
 export default function ExamplePage() {
   const [isClicked, setIsClicked] = useState(false);
   return (
-    <div>
+    <div id="innerPage">
       <div className="innerHeader">
         <header>
           <h1>Why Accessibility?</h1>
@@ -44,13 +45,14 @@ export default function ExamplePage() {
       </div>
       {!isClicked && (
         <div>
+          <IntroCard />
           <div id="innerMain">
-            <IntroCard />
             <ColorContrast />
             <MorphButton />
             <HeaderOrganization />
             <Justified />
-            <MorphReferBy />
+            <ReferBy />
+            <HorizontalScroll />
           </div>
           <InnerSiteFooter />
         </div>
