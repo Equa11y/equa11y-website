@@ -17,7 +17,7 @@ class App extends React.Component {
         <div>
           <NavBar />
         </div>
-        <div>
+        <main>
           <Switch>
             <Route path="/example">
               <ExamplePage />
@@ -29,12 +29,11 @@ class App extends React.Component {
             <Route path="/links">
               <Links />
             </Route>
-
             <Route exact path="/">
               <Main />
             </Route>
           </Switch>
-        </div>
+        </main>
         <Footer />
       </div>
     );
