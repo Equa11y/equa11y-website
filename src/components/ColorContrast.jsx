@@ -7,27 +7,25 @@ export default function ColorContrast() {
   const morph = useMorph();
 
   return (
-    <button className="plain-button" onClick={() => setToggle(!toggle)}>
-      {toggle && (
-        <div className="cards bad-contrast">
-          <p {...morph} className="bad-contrast">
-            This is an example of really bad color contrast. It is very hard to
-            see what is written here...
-          </p>
-          <p {...morph} className="bad-contrast large-text">
-            Even when the text is really big!
-          </p>
+    <div className="cards contrastCard">
+      <button className="morph-button" onClick={() => setToggle(!toggle)}>
+        {toggle ? 'Make it accessible!' : 'Make it inaccessible...'}
+      </button>
+        <div className="cardsBody">
+          {toggle && (
+            <button className="bad-contrast" {...morph}>
+              This is an example of really bad color contrast. It is very hard to
+              see what is written here...<br/>
+              <span className="large-text">Even when the text is really big!</span>
+            </button>
+          )}
+          {!toggle && (
+            <button {...morph} className="good-contrast">
+              Now that the contrast is fixed, it is easier for everyone to see!<br/>
+              <span className="large-text">Even with small text!</span>
+            </button>
+          )}
         </div>
-      )}
-
-      {!toggle && (
-        <div className="cards good-contrast">
-          <p {...morph} className="good-contrast large-text">
-            Now that the contrast is fixed, it is easier for everyone to see!
-          </p>
-          <p {...morph}>Even with small text!</p>
-        </div>
-      )}
-    </button>
+    </div>
   );
 }

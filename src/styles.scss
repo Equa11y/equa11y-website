@@ -4,12 +4,11 @@ body {
   min-width: 900px;
 }
 
-// .container {
-//   width: 100%;
-//   height: 100%;
-//   padding: 0;
-//   margin: 0;
-// }
+main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 45px;
+}
 
 // navbar top of all pages
 .navbar {
@@ -27,11 +26,13 @@ body {
     overflow: hidden;
   }
 
+  // wally icon in navbar
   .wally {
     background-color: transparent;
     border: none;
     margin-left: 20px;
   }
+  .wally:hover { opacity: 0.5; }
 
   .dropdown .dropbtn {
     font-size: 30px;
@@ -66,17 +67,8 @@ body {
   border-radius: 4px;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content div:hover {
-  background-color: lightblue;
-}
-
-.wally:hover {
-  opacity: 0.5;
-}
+.dropdown:hover .dropdown-content { display: block; }
+.dropdown-content div:hover { background-color: lightblue; }
 
 .title {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
@@ -93,13 +85,27 @@ body {
   column-gap: 20px;
   row-gap: 20px;
   margin: 30px;
-  p {
-    font-size: 20px;
-  }
+  p { font-size: 20px; }
 }
 
-// inner site header and navbar
+.plain-button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+  outline: none;
+}
+
+// INNER EXAMPLE SITE
+#innerPage {
+  width: 900px;
+  border: 3px solid black;
+}
+
+#fakeUrl { margin:0; padding:0; font-size:100%; line-height:1; width: 900px;}
+
 .innerHeader {
+  h1 { margin-left: 14px; }
   ul {
     list-style-type: none;
     margin: 0;
@@ -107,7 +113,6 @@ body {
     overflow: hidden;
     background-color: #333;
     display: flex;
-
     li {
       float: left;
       a {
@@ -117,36 +122,23 @@ body {
         padding: 14px 16px;
         text-decoration: none;
       }
-      button:hover {
-        background-color: #111;
-      }
       button {
         color: white;
-        margin: 10px;
-        margin-left: 20px;
-        margin-right: 40px;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 14pt;
+        height: 100%;
+        transition: .2s;
+      }
+      button:hover {
+        background-color: #111;
+        transition: .2s;
       }
     }
   }
 }
 
-// footer for the inner site
-.innerFooter {
-  display: grid;
-  justify-content: center;
-  background-color: #333;
-  color: white;  
-  padding: 14px 16px;
-  width: 100%;
-  .footerBad {
-    font-size: 10px;
-  }
-  .footerGood {
-    font-size: 20px;
-  }
-}
-
-// inner website with transitions
 #innerMain {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -157,6 +149,175 @@ body {
   margin: 30px;
 }
 
+.innerFooter {
+  display: grid;
+  justify-content: center;
+  background-color: #333;
+  color: white;  
+  padding: 14px 16px;
+  width: 100%;
+  .footerBad { font-size: 10px; }
+  .footerGood { font-size: 20px; }
+}
+
+.wallyIntro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 50px;
+}
+
+.cards {
+  height: 400px;
+  width: 400px;
+  margin: 10px;
+  box-shadow: 0px 1px 5px 2px #606060;
+  border-radius: 10px;
+  button { border-radius: 10px;}
+}
+.cards:hover { box-shadow: 0px 2px 7px 3px #606060; }
+
+.cardsBody {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+}
+
+// Morph button
+.morph-button {
+  margin-top: 10px;
+  margin-left: 10px;
+  border: none;
+  background-image: radial-gradient(#3F7C9E, #30597a);
+  border-radius: 28px;
+  box-shadow: 0px 0px 1px 0px #606060;
+  cursor: pointer;
+  color: white;
+  font-family: Arial;
+  font-size: 18px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+.morph-button:hover {
+  box-shadow: 0px 0px 1px 0px #606060;
+  background-image: radial-gradient(#3F7C9E, #38678c);
+}
+
+.contrastCard { background: black; }
+
+.bad-contrast {
+  background: black;
+  color: #242424;
+  border: none;
+  outline: none;
+}
+.good-contrast {
+  background: black;
+  color: white;
+  border: none;
+  outline: none;
+}
+.large-text { font-size: 50px; }
+
+.referBy {
+  font-family: serif;
+  font-size: 12pt;
+  list-style-type: circle;
+}
+
+.rbColor .do { color: darkgreen; }
+.rbColor .dont { color: darkred; }
+.rbContent .do { font-weight: bold; }
+.rbContent .dont {
+  font-style: italic;
+  color: #606060;
+}
+
+.horizontalScroll {
+  div {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f8f9fb;
+    font-size: 16pt;
+  }
+  .scroll {
+    overflow: scroll;
+    white-space: nowrap;
+    border-right: 9px solid #f8f9fa;
+  }
+}
+
+.good-button {
+  background-color: navy;
+  border-radius: 50px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 24px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #c70067;
+}
+
+.bad-button {
+  background-color: #ff5bb0;
+  border-radius: 28px;
+  border: 1px solid #ee1eb5;
+  display: inline-block;
+  cursor: pointer;
+  color: orangered;
+  font-family: Arial;
+  font-size: 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #c70067;
+}
+
+// Justified text
+.over-justified {
+  text-align: justify;
+  padding: 10px;
+}
+
+.left-justified {
+  text-align: left;
+  padding: 10px;
+}
+
+.referBy {
+  font-family: serif;
+  font-size: 12pt;
+  list-style-type: circle;
+}
+
+.rbColor .do { color: darkgreen; }
+.rbColor .dont { color: darkred; }
+.rbContent .do { font-weight: bold; }
+.rbContent .dont {
+  font-style: italic;
+  color: #606060;
+}
+
+.horizontalScroll {
+  div {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f8f9fb;
+    font-size: 16pt;
+  }
+  .scroll {
+    overflow: scroll;
+    white-space: nowrap;
+    border-right: 9px solid #f8f9fa;
+  }
+}
+
+// about page in example site
 .about-example-page {
   display: flex;
   flex-direction: row;
@@ -172,66 +333,7 @@ body {
   padding: 20px;
 }
 
-.cards {
-  height: 400px;
-  width: 400px;
-  margin: 10px;
-  box-shadow: 0px 1px 5px 2px #606060;
-  border-radius: 10px;
-  button { border-radius: 10px;}
-}
-
-.cards:hover {
-  box-shadow: 0px 2px 10px 2px #606060;
-  height: 401px;
-  width: 401px;
-}
-
-.bad-contrast {
-  border-radius: 10px;
-  background-color: #000000;
-  color: #242424;
-}
-
-.good-contrast {
-  border-radius: 10px;
-  background-color: #000000;
-  color: white;
-}
-
-.large-text {
-  font-size: 50px;
-}
-
-.referBy {
-  border: 0px;
-  button {
-    border: 0px;
-    text-align: left;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    ul {
-      font-family: serif;
-      font-size: 12pt;
-      list-style-type: circle;
-    }
-    .rbColor {
-      .do { color: darkgreen };
-      .dont { color: darkred };
-    }
-    .rbContent {
-      .do { font-weight: bold; }
-      .dont {
-        font-style: italic;
-        color: #606060;
-      }
-    }
-  }
-}
-
-// about page
+// Equa11y about page
 .about {
   h2 {
     color: #4c91b8;
@@ -296,6 +398,7 @@ body {
 
 #footer-style {
   background-color: #4c91b8;
+  color: whitesmoke;
   height: 60px;
   width: 100%;
   background-position: 0% 0%;
@@ -319,63 +422,4 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
-}
-
-// Morph button
-.morph-button {
-  background-color: white;
-  border-radius: 28px;
-  border: 1px solid black;
-  cursor: pointer;
-  color: black;
-  font-family: Arial;
-  font-size: 18px;
-  padding: 16px 31px;
-  text-decoration: none;
-}
-
-.good-button {
-  background-color: navy;
-  border-radius: 50px;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 24px;
-  padding: 16px 31px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #c70067;
-}
-
-.bad-button {
-  background-color: #ff5bb0;
-  border-radius: 28px;
-  border: 1px solid #ee1eb5;
-  display: inline-block;
-  cursor: pointer;
-  color: orangered;
-  font-family: Arial;
-  font-size: 10px;
-  padding: 5px 10px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #c70067;
-}
-
-// Justified text
-.over-justified {
-  text-align: justify;
-  padding: 10px;
-}
-
-.left-justified {
-  text-align: left;
-  padding: 10px;
-}
-
-.plain-button {
-  border: none;
-  padding: 0;
-  margin: 0;
-  background-color: inherit;
-  outline: none;
 }
