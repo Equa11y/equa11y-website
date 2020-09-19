@@ -10,7 +10,7 @@ export default function MorphButton() {
       <button className="morph-button" onClick={() => setToggle(!toggle)}>
         {toggle ? 'Make it accessible!' : 'Make it inaccessible...'}
       </button>
-      <div className="morphButton">
+      <div className="cardsBody">
         {toggle && (
           <button className="bad-button" {...morph}>
             Not Accessible

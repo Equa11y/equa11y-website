@@ -1,5 +1,6 @@
 import React from 'react';
 import wa11y from './images/wa11y.png';
+import Chart from './PieChart.jsx';
 
 export default function Main() {
   return (
@@ -27,6 +28,7 @@ export default function Main() {
         <div id="accessImportance">
           <h3>Accessibility and why it's important...</h3>
           <p>A medium size note about accessibility and why it's important.</p>
+          <Chart />
         </div>
       </div>
       <div id="wa11yDog" className="mainChild">
