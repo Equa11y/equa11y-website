@@ -50,10 +50,7 @@ export default function ExamplePage() {
             <MorphButton />
             <HeaderOrganization />
             <Justified />
-<<<<<<< HEAD
-=======
             <MorphReferBy />
->>>>>>> 73a2404252c0c02f548ccd2f8f39f7b19eb32ddf
           </div>
           <InnerSiteFooter />
         </div>
