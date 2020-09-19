@@ -14,54 +14,56 @@ import url from './images/url.png';
 export default function ExamplePage() {
   const [isClicked, setIsClicked] = useState(false);
   return (
-    <div id="innerPage">
-      <div id="urlBar">
-        <img id="fakeUrl" src={url} />
-      </div>
-      <div className="innerHeader">
-        <div>
-          <ul>
-            <li>
-              <button
-                onClick={() => {
-                  setIsClicked(false);
-                }}
-                className="plain-button"
-              >
-                Home
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => {
-                  setIsClicked(true);
-                }}
-                className="plain-button"
-              >
-                About
-              </button>
-            </li>
-          </ul>
+    <section className="innerMainPage">
+      <div id="innerPage">
+        <div id="urlBar">
+          <img id="fakeUrl" src={url} />
         </div>
-        <header>
-          <h1>Why Accessibility?</h1>
-        </header>
-      </div>
-      {!isClicked && (
-        <div>
-          <IntroCard />
-          <div id="innerMain">
-            <ColorContrast />
-            <MorphButton />
-            <HeaderOrganization />
-            <Justified />
-            <ReferBy />
-            <HorizontalScroll />
+        <div className="innerHeader">
+          <div>
+            <ul>
+              <li>
+                <button
+                  onClick={() => {
+                    setIsClicked(false);
+                  }}
+                  className="plain-button"
+                >
+                  Home
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => {
+                    setIsClicked(true);
+                  }}
+                  className="plain-button"
+                >
+                  About
+                </button>
+              </li>
+            </ul>
           </div>
-          <InnerSiteFooter />
+          <header>
+            <h1>Why Accessibility?</h1>
+          </header>
         </div>
-      )}
-      {isClicked && <ExampleAbout />}
-    </div>
+        {!isClicked && (
+          <div>
+            <IntroCard />
+            <div id="innerMain">
+              <ColorContrast />
+              <MorphButton />
+              <HeaderOrganization />
+              <Justified />
+              <ReferBy />
+              <HorizontalScroll />
+            </div>
+            <InnerSiteFooter />
+          </div>
+        )}
+        {isClicked && <ExampleAbout />}
+      </div>
+    </section>
   );
 }

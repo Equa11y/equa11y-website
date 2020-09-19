@@ -4,17 +4,13 @@ import React from 'react';
 export default function Links() {
   return (
     <div>
-      <header role="banner">
+      <header className="innerMainPage" role="banner">
         <h1>Useful Links and More Information</h1>
       </header>
-      <body role="main">
+      <body role="main" className="innerMainPage">
         <ul>
           <li>
-            <a
-              href="https://www.w3.org/WAI/standards-guidelines/wcag/"
-              target="_blank"
-              role="link"
-            >
+            <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" role="link">
               WC3 Web Content Accessibility Guidelines
             </a>
             (WCAG) Overview
@@ -27,8 +23,7 @@ export default function Links() {
               target="_blank"
               role="link"
             >
-              What we found when we tested tools on the world’s least-accessible
-              webpage
+              What we found when we tested tools on the world’s least-accessible webpage
             </a>
           </li>
           <li>
@@ -53,11 +48,7 @@ export default function Links() {
             </a>
           </li>
           <li>
-            <a
-              href="https://reactjs.org/docs/accessibility.html"
-              target="_blank"
-              role="link"
-            >
+            <a href="https://reactjs.org/docs/accessibility.html" target="_blank" role="link">
               React and Accessbility
             </a>
           </li>
