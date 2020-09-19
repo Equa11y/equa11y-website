@@ -12,12 +12,12 @@ export default function MorphButton() {
       </button>
       <div className="cardsBody">
         {toggle && (
-          <button className="bad-button" {...morph}>
+          <button className="bad-button bgButton" {...morph}>
             Not Accessible
           </button>
         )}
         {!toggle && (
-          <button className="good-button" {...morph}>
+          <button className="good-button bgButton" {...morph}>
             Accessible
           </button>
         )}
