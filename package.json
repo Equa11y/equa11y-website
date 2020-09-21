@@ -20,6 +20,7 @@
     "url": "https://github.com/sull364/equa11y-website/issues"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.21",
