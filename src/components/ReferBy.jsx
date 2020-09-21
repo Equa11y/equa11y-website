@@ -15,7 +15,7 @@ export default function ReferBy() {
           <h3>Make sure that information is conveyed by content and not just color.</h3>
           <p>
             In the below list, someone with red/green colorblindness would have no idea which
-            reccomendations are "do"s and which are "don't"s.
+            recommendations are <em>do's</em> and which are <em>don'ts</em>.
           </p>
         </section>
         {toggle && (

@@ -112,9 +112,9 @@ export default function About() {
           <h4>Software Engineer</h4>
           <p>
             An avid coffee drinker and bass player, Will is ecstatic to be a
-            part of team Equa11y! In his spare time, he can typically found
+            part of team Equa11y! In his spare time, he can typically be found
             watching movies, musicals, or playing games with friends and family.
-            He is a proud dog father and soon to be human father!
+            He is a proud husband, dog father, and soon to be human father!
           </p>
           <div>
             <a
