@@ -1,10 +1,10 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { PieChart, Pie, Sector, Cell, LabelList } from 'recharts';
+import PieChartThirty from './ThirtyPercentPie';
 
 export default function ExampleAbout() {
   return (
-    <div className="about-example-page">
+    <div className="about-example-page ">
       <div className="cards-big">
         <p>
           As you can see in these seven different examples, accessibility is so important. Making
@@ -24,14 +24,7 @@ export default function ExampleAbout() {
           accessible websites.
         </p>
         <div>
-          <PieChart width={800} height={400}>
-            <Pie
-              data={[
-                { name: 'Errors Caught', value: 30 },
-                { name: 'Errors Requiring Manual Testing', value: 70 },
-              ]}
-            ></Pie>
-          </PieChart>
+          <PieChartThirty />
         </div>
       </div>
     </div>
