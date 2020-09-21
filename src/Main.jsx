@@ -15,26 +15,31 @@ export default function Main() {
       </div>
       <div className="main-cards">
         <div id="useSite" className="mainChild">
-          <h3>What you'll find...</h3>
+          <h3>What You'll Find Here</h3>
           <p>
-            Team equa11y is all about sharing our passion for web accessibility. If you checkout our
-            transitions page you can take a tour of common accessibility errors found on many
+            Team Equa11y is all about sharing our passion for web accessibility. If you check out
+            our transitions page, you can take a tour of common accessibility errors found on many
             websites. If you visit our docs link, we'll share some great resources with you and
             connect you to some really helpful development tools that can assist you in making your
-            applications accessible to most. We also have an about us link where you can learn more
-            about the Equa11y team.
+            applications accessible to most.
           </p>
         </div>
         <div id="accessImportance">
-          <h3>Accessibility and why it's important...</h3>
-          <p>A medium size note about accessibility and why it's important.</p>
+          <h3>Why is accessibility important?</h3>
+          <p>
+            It is estimated that 15% of the world’s population experiences some form of disability.
+            Without accessibility considerations, only 85% of users will be able to access your
+            website. Keeping accessibility features in mind during the development process will
+            allow those who use assistive technology to access the internet or have visual/hearing
+            impairments to use your website.
+          </p>
           <Chart />
         </div>
       </div>
       <div id="wa11yDog" className="mainChild">
         <div id="introWa11y" className="mainChild">
-          <h3>This is Wa11y...</h3>
-          <p>The Equa11y dog. He's here to guide you on your accessibility journey.</p>
+          <h3>This is Wa11y, the Equa11y dog!</h3>
+          <p>He's here to guide you on your accessibility journey.</p>
         </div>
         <img src={wa11y} alt="dog with name wally" width="500" height="500"></img>
       </div>
