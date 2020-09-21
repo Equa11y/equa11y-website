@@ -16,7 +16,11 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
   const x = cx + radius * Math.cos(-midAngle * RADIAN);
   const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
-  return <text fill="black">{`${(percent * 100).toFixed(0)}%`}</text>;
+  return (
+    <text x={x} y={y} fill="black" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
+      {`${(percent * 100).toFixed(0)}%`}
+    </text>
+  );
 };
 
 export default class Chart extends PureComponent {
@@ -24,7 +28,7 @@ export default class Chart extends PureComponent {
 
   render() {
     return (
-      <PieChart width={400} height={400}>
+      <PieChart fontSize="20px" width={400} height={400}>
         <Pie
           data={data}
           cx={200}

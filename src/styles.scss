@@ -10,6 +10,8 @@ main {
   margin-top: 45px;
 }
 
+button { outline: none; }
+
 // navbar top of all pages
 .navbar {
   display: flex;
@@ -36,7 +38,6 @@ main {
 
   .dropdown .dropbtn {
     font-size: 30px;
-    outline: none;
     color: white;
     padding: 14px 16px;
     background-color: inherit;
@@ -93,7 +94,6 @@ main {
   padding: 0;
   margin: 0;
   background-color: inherit;
-  outline: none;
 }
 
 // INNER EXAMPLE SITE
@@ -205,79 +205,50 @@ main {
   background-image: radial-gradient(#3F7C9E, #38678c);
 }
 
+// Contrast card
 .contrastCard { background: black; }
-
-.bad-contrast {
-  background: black;
-  color: #242424;
+.bgContrast {
+  background-color: black;
   border: none;
-  outline: none;
 }
-.good-contrast {
-  background: black;
-  color: white;
-  border: none;
-  outline: none;
-}
+.bad-contrast { color: #242424; }
+.good-contrast { color: white; }
 .large-text { font-size: 50px; }
 
-.referBy {
-  font-family: serif;
-  font-size: 12pt;
-  list-style-type: circle;
-}
-
-.rbColor .do { color: darkgreen; }
-.rbColor .dont { color: darkred; }
-.rbContent .do { font-weight: bold; }
-.rbContent .dont {
-  font-style: italic;
-  color: #606060;
-}
-
-.horizontalScroll {
-  div {
-    border-radius: 10px;
-    margin: 20px;
-    padding: 10px;
-    background-color: #f8f9fb;
-    font-size: 16pt;
-  }
-  .scroll {
-    overflow: scroll;
-    white-space: nowrap;
-    border-right: 9px solid #f8f9fa;
-  }
+// Button card
+.bgButton {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #c70067;
+  font-family: Arial;
 }
 
 .good-button {
   background-color: navy;
   border-radius: 50px;
-  display: inline-block;
-  cursor: pointer;
   color: #ffffff;
-  font-family: Arial;
   font-size: 24px;
   padding: 16px 31px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #c70067;
 }
 
 .bad-button {
   background-color: #ff5bb0;
   border-radius: 28px;
   border: 1px solid #ee1eb5;
-  display: inline-block;
-  cursor: pointer;
   color: orangered;
-  font-family: Arial;
   font-size: 10px;
   padding: 5px 10px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #c70067;
 }
 
-// Justified text
+.bg {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+}
+.bg li { font-size: 12pt; }
+
+// Justification card
 .over-justified {
   text-align: justify;
   padding: 10px;
@@ -288,12 +259,9 @@ main {
   padding: 10px;
 }
 
-.referBy {
-  font-family: serif;
-  font-size: 12pt;
-  list-style-type: circle;
-}
-
+// Reference by... card
+.referBy { list-style-type: circle; }
+#rbSection { padding-left: 20px; }
 .rbColor .do { color: darkgreen; }
 .rbColor .dont { color: darkred; }
 .rbContent .do { font-weight: bold; }
@@ -302,19 +270,19 @@ main {
   color: #606060;
 }
 
-.horizontalScroll {
-  div {
-    border-radius: 10px;
-    margin: 20px;
-    padding: 10px;
-    background-color: #f8f9fb;
-    font-size: 16pt;
-  }
-  .scroll {
-    overflow: scroll;
-    white-space: nowrap;
-    border-right: 9px solid #f8f9fa;
-  }
+// Horizontal Scroll card
+.hrBox {
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #f8f9fb;
+  font-size: 16pt;
+}
+
+.scroll {
+  overflow: scroll;
+  white-space: nowrap;
+  border-right: 9px solid #f8f9fa;
 }
 
 // about page in example site
