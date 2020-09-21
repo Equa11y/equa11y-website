@@ -8,7 +8,7 @@ const data = [
   // { name: 'Group D', value: 200 },
 ];
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+const COLORS = ['#3A6884', '#695282', '#A50060', '#BF5000'];
 
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
@@ -17,7 +17,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
   const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
   return (
-    <text x={x} y={y} fill="black" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
+    <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
       {`${(percent * 100).toFixed(0)}%`}
     </text>
   );
@@ -28,14 +28,14 @@ export default class Chart extends PureComponent {
 
   render() {
     return (
-      <PieChart width={400} height={400}>
+      <PieChart fontSize="26px" width={600} height={600}>
         <Pie
           data={data}
-          cx={200}
-          cy={200}
+          cx={400}
+          cy={400}
           labelLine={false}
           label={renderCustomizedLabel}
-          outerRadius={80}
+          outerRadius={160}
           fill="#8884d8"
           dataKey="value"
         >
