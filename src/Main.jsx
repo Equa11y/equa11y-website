@@ -7,40 +7,41 @@ export default function Main() {
     <div className="main">
       <div id="introduction" className="mainChild">
         <h2>Welcome to Equa11y!</h2>
-        <p>
+        <h4>
           We believe the internet is for everyone. However, there are many groups who find
           themselves excluded from accessing the web. Our mission is to use our skills and abilities
           to build tools that help make the internet a more accessible place.
-        </p>
+        </h4>
       </div>
-      <div id="useSite" className="mainChild">
-        <h2>What you'll find...</h2>
-        <p>
-          Team equa11y is all about sharing our passion for web accessibility. If you checkout our
-          transitions page you can take a tour of common accessibility errors found on many
-          websites. If you visit our docs link, we'll share some great resources with you and
-          connect you to some really helpful development tools that can assist you in making your
-          applications accessible to most. We also have an about us link where you can learn more
-          about the Equa11y team.
-        </p>
-      </div>
-      <div id="accessImportance">
-        <h2>Accessibility and why it's important...</h2>
-        <p>A medium size note about accessibility and why it's important.</p>
-      </div>
-      {/* add image here */}
-      <div id="image1" className="mainChild">
-        <center>
+      <div className="main-cards">
+        <div id="useSite" className="mainChild">
+          <h3>What You'll Find Here</h3>
+          <p>
+            Team Equa11y is all about sharing our passion for web accessibility. If you check out
+            our transitions page, you can take a tour of common accessibility errors found on many
+            websites. If you visit our docs link, we'll share some great resources with you and
+            connect you to some really helpful development tools that can assist you in making your
+            applications accessible to most.
+          </p>
+        </div>
+        <div id="accessImportance">
+          <h3>Why is accessibility important?</h3>
+          <p>
+            It is estimated that 15% of the world’s population experiences some form of disability.
+            Without accessibility considerations, only 85% of users will be able to access your
+            website. Keeping accessibility features in mind during the development process will
+            allow those who use assistive technology to access the internet or have visual/hearing
+            impairments to use your website.
+          </p>
           <Chart />
-        </center>
-      </div>
-      {/* add image here */}
-      <div id="wa11yDog" className="mainChild">
-        <img src={wa11y} alt="dog with name wally" width="500" height="500"></img>
-      </div>
-      <div id="introWa11y" className="mainChild">
-        <h2>This is Wa11y...</h2>
-        <p>The Equa11y dog. He's here to guide you on your accessibility journey.</p>
+        </div>
+        <div id="wa11yDog">
+          <div id="introWa11y">
+            <h3>This is Wa11y, the Equa11y dog!</h3>
+            <p>He's here to guide you on your accessibility journey.</p>
+          </div>
+          <img src={wa11y} alt="dog with name wally" width="500" height="500"></img>
+        </div>
       </div>
     </div>
   );
