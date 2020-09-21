@@ -85,6 +85,8 @@ button {
   background-color: lightblue;
 }
 
+.grain { margin: 0px 6px; }
+
 .title {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
     Verdana, sans-serif;
@@ -404,7 +406,7 @@ button {
 
 // Equa11y about page
 .about {
-  h2 {
+  h1 {
     color: #4c91b8;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -412,14 +414,14 @@ button {
     margin-left: 40px;
   }
 
-  h3 {
-    color: #4c91b8;
+  h2 {
+    color:  #3a6884;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 1.125em;
   }
 
-  h4 {
+  h3 {
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;

@@ -4,7 +4,7 @@ import React from 'react';
 export default function Footer() {
   return (
     <footer className="footer" id="footer-style">
-      <ul className="footer-links" aria-labelledby="contact-links">
+      <ul className="footer-links" aria-label="contactLinks">
         <li>
           <a
             className="contact-links"
