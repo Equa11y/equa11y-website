@@ -11,9 +11,7 @@ body {
   margin-top: 45px;
 }
 
-button {
-  outline: none;
-}
+button { outline: none; }
 
 // navbar top of all pages
 .navbar {
@@ -289,22 +287,14 @@ button {
 }
 
 // Contrast card
-.contrastCard {
-  background: black;
-}
+.contrastCard { background: black; }
 .bgContrast {
   background-color: black;
   border: none;
 }
-.bad-contrast {
-  color: #242424;
-}
-.good-contrast {
-  color: white;
-}
-.large-text {
-  font-size: 50px;
-}
+.bad-contrast { color: #242424; }
+.good-contrast { color: white; }
+.large-text { font-size: 50px; }
 
 // Button card
 .bgButton {
@@ -337,9 +327,7 @@ button {
   border: none;
   text-align: left;
 }
-.bg li {
-  font-size: 12pt;
-}
+.bg li { font-size: 12pt; }
 
 // Justification card
 .over-justified {
@@ -353,21 +341,11 @@ button {
 }
 
 // Reference by... card
-.referBy {
-  list-style-type: circle;
-}
-#rbSection {
-  padding-left: 20px;
-}
-.rbColor .do {
-  color: darkgreen;
-}
-.rbColor .dont {
-  color: darkred;
-}
-.rbContent .do {
-  font-weight: bold;
-}
+.referBy { list-style-type: circle; }
+#rbSection { padding-left: 20px; }
+.rbColor .do { color: darkgreen; }
+.rbColor .dont { color: darkred; }
+.rbContent .do { font-weight: bold; }
 .rbContent .dont {
   font-style: italic;
   color: #606060;
@@ -504,4 +482,12 @@ button {
     text-decoration: none;
     cursor: pointer;
   }
+}
+
+// Links Page
+.linksPage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20%;
 }
