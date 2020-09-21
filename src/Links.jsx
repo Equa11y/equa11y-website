@@ -4,10 +4,10 @@ import React from 'react';
 export default function Links() {
   return (
     <div>
-      <header className="innerMainPage" role="banner">
+      <header className="innerMainPage">
         <h1>Useful Links and More Information</h1>
       </header>
-      <body role="main" className="innerMainPage">
+      <body className="innerMainPage">
         <ul>
           <li>
             <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" role="link">

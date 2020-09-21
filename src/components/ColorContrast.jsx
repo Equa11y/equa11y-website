@@ -21,8 +21,8 @@ export default function ColorContrast() {
           )}
           {!toggle && (
             <button {...morph} className="good-contrast bgContrast">
-              Now that the contrast is fixed, it is easier for everyone to see!<br/>
-              <span className="large-text">Even with small text!</span>
+              <span className="large-text">Now that the contrast is fixed, it is easier for everyone to see!</span><br/>
+              Even with small text!
             </button>
           )}
         </div>

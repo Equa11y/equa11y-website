@@ -17,7 +17,7 @@ export default function ExamplePage() {
     <section className="innerMainPage">
       <div id="innerPage">
         <div id="urlBar">
-          <img id="fakeUrl" src={url} />
+          <img id="fakeUrl" alt="a fake url bar for our demo website below at Wally's world of websites." src={url} />
         </div>
         <div className="innerHeader">
           <div>
@@ -45,7 +45,7 @@ export default function ExamplePage() {
             </ul>
           </div>
           <header>
-            <h1>Why Accessibility?</h1>
+            <h2>Why Accessibility?</h2>
           </header>
         </div>
         {!isClicked && (
