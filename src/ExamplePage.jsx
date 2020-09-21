@@ -14,7 +14,7 @@ import url from './images/url.png';
 export default function ExamplePage() {
   const [isClicked, setIsClicked] = useState(false);
   return (
-    <main>
+    <div>
       {!isClicked && (
         <nav aria-label="breadcrumbs" className="breadcrumbs">
           <span>
@@ -22,7 +22,7 @@ export default function ExamplePage() {
               Home
             </a>
           </span>
-          <span> {'>'} </span>
+          <span className="grain"> {'>'} </span>
           <span>
             <a className="breadcrumb-links">Example Page</a>
           </span>
@@ -34,7 +34,7 @@ export default function ExamplePage() {
           <span>
             <a href="/">Home</a>
           </span>
-          <span> {'>'} </span>
+          <span className="grain"> {'>'} </span>
           <span>
             <a
               onClick={() => {
@@ -44,7 +44,7 @@ export default function ExamplePage() {
               Example Page
             </a>
           </span>
-          <span> {'>'} </span>
+          <span className="grain"> {'>'} </span>
           <span>
             <a>About This Site</a>
           </span>
@@ -102,6 +102,6 @@ export default function ExamplePage() {
           {isClicked && <ExampleAbout />}
         </div>
       </section>
-    </main>
+    </div>
   );
 }

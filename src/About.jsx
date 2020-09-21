@@ -16,7 +16,7 @@ export default function About() {
             Home
           </a>
         </span>
-        <span> {'>'} </span>
+        <span className="grain"> {'>'} </span>
         <span>
           <a className="breadcrumb-links">About</a>
         </span>
