@@ -1,4 +1,4 @@
-span; /* eslint-disable prettier/prettier */
+/* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
 import ColorContrast from './components/ColorContrast';
 import IntroCard from './components/IntroCard';
