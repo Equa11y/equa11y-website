@@ -3,7 +3,18 @@ import React from 'react';
 
 export default function Links() {
   return (
-    <div>
+    <main>
+      <nav aria-label="breadcrumbs" className="breadcrumbs">
+        <span>
+          <a className="breadcrumb-links" href="/">
+            Home
+          </a>
+        </span>
+        <span> {'>'} </span>
+        <span>
+          <a className="breadcrumb-links">Useful Links</a>
+        </span>
+      </nav>
       <header className="innerMainPage" role="banner">
         <h1>Useful Links and More Information</h1>
       </header>
@@ -55,6 +66,6 @@ export default function Links() {
           <li>Link to our medium articles etc</li>
         </ul>
       </body>
-    </div>
+    </main>
   );
 }

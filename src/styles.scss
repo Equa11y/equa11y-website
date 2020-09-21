@@ -42,7 +42,7 @@ button {
   }
 
   .dropdown .dropbtn {
-    font-size: 30px;
+    font-size: 50px;
     outline: none;
     color: #3a6884;
     padding: 14px 16px;
@@ -61,14 +61,18 @@ button {
 }
 
 .dropdown-content {
-  font-size: 20px;
+  div {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+  }
+  font-size: 40px;
   position: absolute;
   margin-right: 250px;
   padding: 5px;
-
   background-color: #3a6884;
-  height: 100px;
-  min-width: 110px;
+  height: 250px;
+  min-width: 130px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 4px;
@@ -404,6 +408,7 @@ button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 2em;
+    margin-left: 40px;
   }
 
   h3 {
@@ -435,21 +440,29 @@ button {
 }
 
 .breadcrumbs {
-  color: #626366;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 1.125em;
   display: flex;
   flex-direction: row;
-}
-
-.breadcrumb-links {
+  margin-left: 40px;
   color: #626366;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   font-size: 1.125em;
   text-decoration: none;
   cursor: pointer;
+  a {
+    color: #626366;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.125em;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+  }
 }
 
 .bio-container {

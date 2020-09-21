@@ -9,12 +9,7 @@ export default function NavBar() {
     <div className="navbar">
       <Link to="/">
         <button className="wally" role="button">
-          <img
-            src={wa11y}
-            alt="dog with name wally"
-            width="100"
-            height="100"
-          ></img>
+          <img src={wa11y} alt="dog with name wally" width="100" height="100"></img>
         </button>
       </Link>
 
@@ -38,11 +33,6 @@ export default function NavBar() {
             <Link to="about">
               <button onClick={() => setIsClicked(false)} className="content">
                 <div>About</div>
-              </button>
-            </Link>
-            <Link to="/">
-              <button onClick={() => setIsClicked(false)} className="content">
-                <div>Home</div>
               </button>
             </Link>
           </div>
