@@ -39,7 +39,7 @@ module.exports = {
     },
   },
   devServer: {
-    contentBase: './dist',
+    publicPath: '/dist',
     historyApiFallback: true,
   },
 };
