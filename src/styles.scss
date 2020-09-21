@@ -1,10 +1,11 @@
 body {
   margin: 0;
-  height: 3000px;
   min-width: 900px;
+  min-height: 400px;
+  margin-bottom: 100px;
 }
 
-main {
+.innerMainPage {
   display: flex;
   justify-content: space-around;
   margin-top: 45px;
@@ -88,9 +89,8 @@ button {
 
 // temlate for main.jsx
 .main {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
+  display: grid;
+  flex-direction: row;
   height: 100%;
   h2 {
     font-family: Arial, Helvetica, sans-serif;
@@ -116,42 +116,30 @@ button {
     background-color: #3a6884;
     border-radius: 5px;
     padding: 30px;
+    width: 100%;
   }
   .main-cards {
     display: flex;
-    justify-content: space-between;
-  }
-  #useSite {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 45%;
-    background-color: white;
-    border: 1px solid #3a6884;
-    border-radius: 5px;
-    margin: 10px 0px 10px 0px;
-    padding: 20px;
-  }
-  #accessImportance {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 45%;
-    background-color: white;
-    border: 1px solid #3a6884;
-    border-radius: 5px;
-    margin: 10px 0px 10px 0px;
-    padding: 20px;
-  }
-  #wa11yDog {
-    display: flex;
-    justify-content: center;
-    width: 45%;
-    background-color: white;
-    border: 1px solid #3a6884;
-    border-radius: 5px;
-    margin: 10px 0px 10px 0px;
-    padding: 20px;
+    justify-content: space-around;
+    width: 80%;
+    padding: 50px;
+    div {
+      max-width: 1000px;
+      min-width: 700px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 45%;
+      background-color: white;
+      border: 1px solid #3a6884;
+      border-radius: 5px;
+      margin: 20px;
+      padding: 20px;
+      div {
+        border: none;
+        padding: 0px;
+      }
+    }
   }
 }
 
@@ -174,6 +162,12 @@ button {
   font-size: 100%;
   line-height: 1;
   width: 900px;
+}
+#urlBar {
+  margin: 0;
+  padding: 0;
+  height: 23px;
+  width: 100%;
 }
 
 .innerHeader {
@@ -445,6 +439,8 @@ button {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   font-size: 1.125em;
+  display: flex;
+  flex-direction: row;
 }
 
 .breadcrumb-links {
@@ -467,14 +463,14 @@ button {
 }
 
 #footer-style {
-  background-color: #4c91b8;
+  background-color: #3a6884;
   color: whitesmoke;
   height: 60px;
   width: 100%;
   background-position: 0% 0%;
   position: fixed;
-  bottom: 0pt;
-  left: 0pt;
+  bottom: 0;
+  left: 0;
 }
 
 .footer {
