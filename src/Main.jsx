@@ -35,13 +35,13 @@ export default function Main() {
           </p>
           <Chart />
         </div>
-      </div>
-      <div id="wa11yDog" className="mainChild">
-        <div id="introWa11y" className="mainChild">
-          <h3>This is Wa11y, the Equa11y dog!</h3>
-          <p>He's here to guide you on your accessibility journey.</p>
+        <div id="wa11yDog">
+          <div id="introWa11y">
+            <h3>This is Wa11y, the Equa11y dog!</h3>
+            <p>He's here to guide you on your accessibility journey.</p>
+          </div>
+          <img src={wa11y} alt="dog with name wally" width="500" height="500"></img>
         </div>
-        <img src={wa11y} alt="dog with name wally" width="500" height="500"></img>
       </div>
     </div>
   );
