@@ -2,12 +2,18 @@
   "name": "equa11y-website",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "server/server.js",
+  "engines": {
+    "node": "^12"
+  },
   "scripts": {
-    "clean": "rm dist/bundle.js",
-    "build-prod": "webpack -p --mode production",
+    "clean": "rm -rf dist",
+    "build-prod": "webpack -p --mode=production && cp index.html dist/index.html",
     "start": "webpack-dev-server --open --hot",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "node server/server.js",
+    "build-all": "rm -rf dist && npm i && npm build-prod",
+    "heroku-postbuild": "npm build-all"
   },
   "repository": {
     "type": "git",
@@ -44,6 +50,7 @@
     "prettier": "^2.1.2",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
