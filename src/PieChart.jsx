@@ -28,11 +28,11 @@ export default class Chart extends PureComponent {
 
   render() {
     return (
-      <PieChart fontSize="26px" width={600} height={600}>
+      <PieChart fontSize="26px" width={600} height={400}>
         <Pie
           data={data}
-          cx={400}
-          cy={400}
+          cx={300}
+          cy={200}
           labelLine={false}
           label={renderCustomizedLabel}
           outerRadius={160}

@@ -96,10 +96,15 @@ button { outline: none; }
   display: grid;
   flex-direction: row;
   height: 100%;
+  width: auto;
+  color: white;
+  .introP {
+    color: white;
+  }
   h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
-    color: white;
+    color: black;
   }
   h3 {
     font-family: Arial, Helvetica, sans-serif;
@@ -120,20 +125,26 @@ button { outline: none; }
     background-color: #3a6884;
     border-radius: 5px;
     padding: 30px;
-    width: 100%;
+    width: auto;
   }
+  
   .main-cards {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    width: 80%;
+    // flex: 1 0 auto;
+    width: auto;
     padding: 50px;
-    div {
-      max-width: 1000px;
+    #useSite {
+      // width: 100%;
+    }
+    .mainChild {
+      // max-width: auto;
       min-width: 700px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 45%;
+      // width: 45%;
       background-color: white;
       border: 1px solid #3a6884;
       border-radius: 5px;
