@@ -7,10 +7,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/dist',
+    publicPath: '/',
   },
-  // mode: process.env.NODE_ENV,
-  mode: 'development',
   module: {
     rules: [
       {
@@ -27,8 +25,9 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: ['file-loader'],
+        test: /\.(eot|woff|woff2|ttf|svg|png|jpg)$/,
+        include: [path.resolve(__dirname + '/src')],
+        loader: 'url-loader?limit=50000&name=[name].[ext]',
       },
     ],
   },
