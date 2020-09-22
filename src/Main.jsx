@@ -7,7 +7,7 @@ export default function Main() {
     <div className="main">
       <div id="introduction" className="mainChild">
         <h1>Welcome to Equa11y!</h1>
-        <p>
+        <p className="introP">
           We believe the internet is for everyone. However, there are many groups who find
           themselves excluded from accessing the web. Our mission is to use our skills and abilities
           to build tools that help make the internet a more accessible place.
@@ -24,7 +24,7 @@ export default function Main() {
             applications accessible to most.
           </p>
         </div>
-        <div id="accessImportance">
+        <div id="accessImportance" className="mainChild">
           <h2>Why is accessibility important?</h2>
           <p>
             It is estimated that 15% of the world’s population experiences some form of disability.
@@ -35,7 +35,7 @@ export default function Main() {
           </p>
           <Chart />
         </div>
-        <div id="wa11yDog">
+        <div id="wa11yDog" className="mainChild">
           <div id="introWa11y">
             <h2>This is Wa11y, the Equa11y dog!</h2>
             <p>He's here to guide you on your accessibility journey.</p>
