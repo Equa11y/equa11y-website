@@ -1,10 +1,8 @@
-/* eslint-disable prettier/prettier */
-import React, { useState } from 'react';
+import React from 'react';
 import wa11y from './images/wa11y.png';
 import { Link } from 'react-router-dom';
 
 export default function NavBar() {
-  // const [isClicked, setIsClicked] = useState(false);
   return (
     <div>
       <div className="navbar">
@@ -16,6 +14,11 @@ export default function NavBar() {
         <div className="title">Equa11y</div>
       </div>
       <div className="dropdown navbar">
+        <Link to="/">
+          <button className="content">
+            <div>Home</div>
+          </button>
+        </Link>
         <Link to="/example">
           <button className="content">
             <div>Example Page</div>
@@ -31,7 +34,7 @@ export default function NavBar() {
             <div>About Us</div>
           </button>
         </Link>
-        <Link to="/equa11y">
+        <Link to="/equa11ycli">
           <button className="content">
             <div>Equa11y CLI</div>
           </button>
