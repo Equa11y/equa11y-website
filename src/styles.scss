@@ -113,6 +113,14 @@ button {
     width: 100%;
   }
 
+  .commandline {
+    background-color: #3a6884;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .main-cards {
     display: flex;
     flex-direction: column;
@@ -120,9 +128,7 @@ button {
     // flex: 1 0 auto;
     width: auto;
     padding: 50px;
-    #useSite {
-      // width: 100%;
-    }
+
     .mainChild {
       // max-width: auto;
       min-width: 700px;
