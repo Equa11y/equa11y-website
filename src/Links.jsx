@@ -51,25 +51,25 @@ export default function Links() {
         <h2>Web accessibility in the news</h2>
           <ul>
           <li>
-            Blog from UK Government:
+           <span>Blog from UK Government: </span>
             <a
               href="https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/"
               target="_blank"
               role="link"
             >
-              What we found when we tested tools on the world’s least-accessible webpage
+               What we found when we tested tools on the world’s least-accessible webpage
             </a>
           </li>
           
 
           <li>
-            Web Accessibility court case:
+            <span>Web Accessibility court case: </span>
             <a
               href="https://www.cnbc.com/2019/10/07/dominos-supreme-court.html"
               target="_blank"
               role="link"
             >
-              Domino's Pizza v. Guillermo Robles
+               Domino's Pizza v. Guillermo Robles
             </a>
           </li>
           </ul>
