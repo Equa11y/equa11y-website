@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build-prod": "webpack -p --mode=production && cp index.html dist/index.html",
-    "start": "webpack-dev-server --open --hot",
+    "start": "webpack-dev-server --open --hot & nodemon server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-server": "node server/server.js",
     "build-all": "rm -rf dist && npm i && npm run build-prod",

@@ -38,7 +38,7 @@ module.exports = {
     },
   },
   devServer: {
-    publicPath: '/dist',
+    contentBase: path.resolve(__dirname, 'dist'),
     historyApiFallback: true,
   },
 };
