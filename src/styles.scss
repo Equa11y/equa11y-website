@@ -11,7 +11,9 @@ body {
   margin-top: 45px;
 }
 
-button { outline: none; }
+button {
+  outline: none;
+}
 
 // navbar top of all pages
 .navbar {
@@ -83,7 +85,9 @@ button { outline: none; }
   background-color: lightblue;
 }
 
-.grain { margin: 0px 6px; }
+.grain {
+  margin: 0px 6px;
+}
 
 .title {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
@@ -123,11 +127,10 @@ button { outline: none; }
   }
   #introduction {
     background-color: #3a6884;
-    border-radius: 5px;
     padding: 30px;
     width: auto;
   }
-  
+
   .main-cards {
     display: flex;
     flex-direction: column;
@@ -299,14 +302,22 @@ button { outline: none; }
 }
 
 // Contrast card
-.contrastCard { background: black; }
+.contrastCard {
+  background: black;
+}
 .bgContrast {
   background-color: black;
   border: none;
 }
-.bad-contrast { color: #242424; }
-.good-contrast { color: white; }
-.large-text { font-size: 50px; }
+.bad-contrast {
+  color: #242424;
+}
+.good-contrast {
+  color: white;
+}
+.large-text {
+  font-size: 50px;
+}
 
 // Button card
 .bgButton {
@@ -339,7 +350,9 @@ button { outline: none; }
   border: none;
   text-align: left;
 }
-.bg li { font-size: 12pt; }
+.bg li {
+  font-size: 12pt;
+}
 
 // Justification card
 .over-justified {
@@ -353,11 +366,21 @@ button { outline: none; }
 }
 
 // Reference by... card
-.referBy { list-style-type: circle; }
-#rbSection { padding-left: 20px; }
-.rbColor .do { color: darkgreen; }
-.rbColor .dont { color: darkred; }
-.rbContent .do { font-weight: bold; }
+.referBy {
+  list-style-type: circle;
+}
+#rbSection {
+  padding-left: 20px;
+}
+.rbColor .do {
+  color: darkgreen;
+}
+.rbColor .dont {
+  color: darkred;
+}
+.rbContent .do {
+  font-weight: bold;
+}
 .rbContent .dont {
   font-style: italic;
   color: #606060;
@@ -405,7 +428,7 @@ button { outline: none; }
   }
 
   h2 {
-    color:  #3a6884;
+    color: #3a6884;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 1.125em;
