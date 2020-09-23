@@ -2,12 +2,11 @@ import React, { PureComponent } from 'react';
 import { PieChart, Pie, Sector, Cell } from 'recharts';
 
 const data = [
-  { name: 'Group A', value: 39 },
-  { name: 'Group B', value: 246 },
-  { name: 'Group C', value: 715 },
-  // { name: 'Group D', value: 200 },
+  { name: '% with disabilites', value: 17 },
+  { name: '% worlds population', value: 100 },
 ];
 
+// Pic chart colors; only the first two colors are used at the moment
 const COLORS = ['#3A6884', '#695282', '#A50060', '#BF5000'];
 
 const RADIAN = Math.PI / 180;
@@ -24,14 +23,12 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 };
 
 export default class Chart extends PureComponent {
-  // const jsfiddleUrl = 'https://jsfiddle.net/alidingling/c9pL8k61/';
-
   render() {
     return (
-      <PieChart fontSize="26px" width={600} height={400}>
+      <PieChart fontSize="26px" width={800} height={400}>
         <Pie
           data={data}
-          cx={300}
+          cx={400}
           cy={200}
           labelLine={false}
           label={renderCustomizedLabel}
