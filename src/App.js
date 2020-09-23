@@ -7,7 +7,7 @@ import NavBar from './NavBar';
 import About from './About';
 import Footer from './Footer';
 import Main from './Main';
-
+import Equa11yCLI from './Equa11yCLI';
 import Links from './Links';
 
 class App extends React.Component {
@@ -19,6 +19,9 @@ class App extends React.Component {
         </div>
         <main>
           <Switch>
+            <Route path="/equa11ycli">
+              <Equa11yCLI />
+            </Route>
             <Route path="/example">
               <ExamplePage />
             </Route>
