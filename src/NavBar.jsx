@@ -16,7 +16,7 @@ export default function NavBar() {
       <div className="dropdown navbar">
         <Link to="/">
           <button className="content">
-            <div>Home</div>
+            <div>Home Page</div>
           </button>
         </Link>
         <Link to="/example">
