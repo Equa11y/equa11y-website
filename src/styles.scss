@@ -55,6 +55,7 @@ button {
     margin: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    height: auto;
   }
   div:hover {
     background-color: lightblue;
@@ -163,7 +164,8 @@ button {
 #innerPage {
   width: 900px;
   border: 3px solid black;
-  height: 1870px;
+  min-height: 1800px;
+  height: auto;
 }
 
 #fakeUrl {
@@ -350,7 +352,8 @@ button {
 // Justification card
 .over-justified {
   text-align: justify;
-  padding: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
   font-size: 14pt;
 }
 
@@ -480,11 +483,21 @@ button {
   display: flex;
   justify-content: space-around;
   font-size: 24pt;
+  flex-wrap: wrap;
+  img {
+    border-radius: 100px;
+    width: 400px;
+  }
+  #git-link {
+    height: 80px;
+    width: 140px;
+  }
 }
 
 .bio {
-  width: 15%;
+  width: 40%;
   padding: 20px;
+  margin-left: 20px;
 }
 
 #footer-style {

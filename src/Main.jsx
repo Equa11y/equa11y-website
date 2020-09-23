@@ -6,7 +6,7 @@ export default function Main() {
   return (
     <div className="main">
       <div id="introduction" className="mainChild">
-        <h1>Welcome to Equa11y!</h1>
+        <h1>Welcome to equa11y!</h1>
         <p className="introP">
           We believe the internet is for everyone. However, there are many groups who find
           themselves excluded from accessing the web. Our mission is to use our skills and abilities
@@ -28,11 +28,11 @@ export default function Main() {
           <h2>Why is accessibility important?</h2>
           <p>
             It is estimated that 15% of the world’s population experiences some form of disability.
-            That's an estimated 1 billion human beings. Of that percentage nearly 285mi individuals
-            experience some form of visual impairment. Without accessibility considerations, only
-            85% of users will be able to access your website. Keeping accessibility features in mind
-            during the development process will allow those who use assistive technology to access
-            the internet to use your applications.
+            That's an estimated 1 billion human beings. Of that percentage nearly 285 million
+            individuals experience some form of visual impairment. Without accessibility
+            considerations, only 85% of users will be able to access your website. Keeping
+            accessibility features in mind during the development process will allow those who use
+            assistive technology to access the internet to use your applications.
           </p>
           <Chart />
         </div>

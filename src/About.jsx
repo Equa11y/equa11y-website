@@ -24,7 +24,7 @@ export default function About() {
       <h1>Our Team</h1>
       <section className="bio-container">
         <div className="bio">
-          <img src={taylor} alt="Taylor Riley Du" width="250"></img>
+          <img src={taylor} alt="Taylor Riley Du"></img>
           <h2>Taylor Riley Du</h2>
           <h3>Software Engineer</h3>
           <p>
@@ -40,7 +40,7 @@ export default function About() {
               target="_blank"
               role="link"
             >
-              <img alt="Taylor github link" src={github} height="40" width="70"></img>
+              <img alt="Taylor github link" src={github} id="git-link"></img>
             </a>
             <a
               className="plain-button"
@@ -48,12 +48,12 @@ export default function About() {
               target="_blank"
               role="link"
             >
-              <img alt="Taylor linkedIn link" src={linkedIn} height="40" width="70"></img>
+              <img alt="Taylor linkedIn link" src={linkedIn} id="git-link"></img>
             </a>
           </div>
         </div>
         <div className="bio">
-          <img src={heather} alt="Heather Friedman" width="250"></img>
+          <img src={heather} alt="Heather Friedman"></img>
           <h2>Heather Friedman</h2>
           <h3>Software Engineer</h3>
           <p>
@@ -69,7 +69,7 @@ export default function About() {
               target="_blank"
               role="link"
             >
-              <img alt="Heather github link" src={github} height="40" width="70"></img>
+              <img alt="Heather github link" src={github} id="git-link"></img>
             </a>
             <a
               className="plain-button"
@@ -77,19 +77,18 @@ export default function About() {
               target="_blank"
               role="link"
             >
-              <img alt="Heather linkedIn link" src={linkedIn} height="40" width="70"></img>
+              <img alt="Heather linkedIn link" src={linkedIn} id="git-link"></img>
             </a>
           </div>
         </div>
         <div className="bio">
-          <img src={will} alt="Will Hack" width="250"></img>
+          <img src={will} alt="Will Hack"></img>
           <h2>Will Hack</h2>
           <h3>Software Engineer</h3>
           <p>
-            An avid coffee drinker and bass player, Will is ecstatic to be a
-            part of team Equa11y! In his spare time, he can typically be found
-            watching movies, musicals, or playing games with friends and family.
-            He is a proud husband, dog father, and soon to be human father!
+            An avid coffee drinker and bass player, Will is ecstatic to be a part of team Equa11y!
+            In his spare time, he can typically be found watching movies, musicals, or playing games
+            with friends and family. He is a proud husband, dog father, and soon to be human father!
           </p>
           <div>
             <a
@@ -98,7 +97,7 @@ export default function About() {
               target="_blank"
               role="link"
             >
-              <img alt="Will github link" src={github} height="40" width="70"></img>
+              <img alt="Will github link" src={github} id="git-link"></img>
             </a>
             <a
               className="plain-button"
@@ -106,12 +105,12 @@ export default function About() {
               target="_blank"
               role="link"
             >
-              <img alt="Will linkedIn link" src={linkedIn} height="40" width="70"></img>
+              <img alt="Will linkedIn link" src={linkedIn} id="git-link"></img>
             </a>
           </div>
         </div>
         <div className="bio">
-          <img src={sully} alt="Tjolanda Sullivan" width="250"></img>
+          <img src={sully} alt="Tjolanda Sullivan"></img>
           <h2>Tjolanda Sullivan</h2>
           <h3>Software Engineer</h3>
           <p>
@@ -127,7 +126,7 @@ export default function About() {
               target="_blank"
               role="link"
             >
-              <img alt="Tjolanda github link" src={github} height="40" width="70"></img>
+              <img alt="Tjolanda github link" src={github} id="git-link"></img>
             </a>
             <a
               className="plain-button"
@@ -135,7 +134,7 @@ export default function About() {
               target="_blank"
               role="link"
             >
-              <img alt="Tjolanda linkedIn link" src={linkedIn} height="40" width="70"></img>
+              <img alt="Tjolanda linkedIn link" src={linkedIn} id="git-link"></img>
             </a>
           </div>
         </div>
