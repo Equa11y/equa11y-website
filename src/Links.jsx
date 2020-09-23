@@ -16,7 +16,7 @@ export default function Links() {
         </span>
       </nav>
       <header className="innerMainPage">
-        <h1>Useful Links and More Information</h1>
+        <h1 className="linksHeader">Useful Links and More Information</h1>
       </header>
       <body className="linksPage">
         <div>
