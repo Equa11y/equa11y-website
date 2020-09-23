@@ -483,11 +483,21 @@ button {
   display: flex;
   justify-content: space-around;
   font-size: 24pt;
+  flex-wrap: wrap;
+  img {
+    border-radius: 100px;
+    width: 400px;
+  }
+  #git-link {
+    height: 80px;
+    width: 140px;
+  }
 }
 
 .bio {
-  width: 15%;
+  width: 40%;
   padding: 20px;
+  margin-left: 20px;
 }
 
 #footer-style {

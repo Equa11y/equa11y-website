@@ -11,7 +11,7 @@ export default function NavBar() {
             <img src={wa11y} alt="dog with name wally" width="100" height="100"></img>
           </button>
         </Link>
-        <div className="title">Equa11y</div>
+        <div className="title">equa11y</div>
       </div>
       <div className="dropdown navbar">
         <Link to="/">

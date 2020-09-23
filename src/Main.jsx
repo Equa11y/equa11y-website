@@ -6,7 +6,7 @@ export default function Main() {
   return (
     <div className="main">
       <div id="introduction" className="mainChild">
-        <h1>Welcome to Equa11y!</h1>
+        <h1>Welcome to equa11y!</h1>
         <p className="introP">
           We believe the internet is for everyone. However, there are many groups who find
           themselves excluded from accessing the web. Our mission is to use our skills and abilities
