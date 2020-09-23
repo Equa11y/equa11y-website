@@ -38,7 +38,7 @@ export default function Equa11yCLI() {
           <div className="mainChild">
             <h2>How To Use</h2>
             <p>
-              Simply install our
+              Simply install our{' '}
               <a href="https://www.npmjs.com/package/equa11y" target="_blank" role="link">
                 npm package
               </a>{' '}
