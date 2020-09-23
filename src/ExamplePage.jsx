@@ -94,7 +94,7 @@ export default function ExamplePage() {
                 <HeaderOrganization />
                 <Justified />
                 <ReferBy />
-                <HorizontalScroll />
+                <HorizontalScroll />                
               </div>
               <InnerSiteFooter />
             </div>
