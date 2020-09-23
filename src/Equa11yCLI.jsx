@@ -38,10 +38,11 @@ export default function Equa11yCLI() {
           <div className="mainChild">
             <h2>How To Use</h2>
             <p>
-              Simply install our{' '}
+              Simply install our
               <a href="https://www.npmjs.com/package/equa11y" target="_blank" role="link">
-                npm package
-              </a>{' '}
+                {' '}
+                npm package{' '}
+              </a>
               and run npx equa11y to get started. Then input the url of the website you want to
               test. You can use equa11y on either a deployed website or a website hosted locally.
             </p>
