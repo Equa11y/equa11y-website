@@ -38,20 +38,19 @@ export default function Equa11yCLI() {
           <div className="mainChild">
             <h2>How To Use</h2>
             <p>
-              Simply install our
+              Simply install our{' '}
               <a href="https://www.npmjs.com/package/equa11y" target="_blank" role="link">
-                {' '}
-                npm package{' '}
-              </a>
-              and run npx equa11y to get started. Then input the url of the website you want to
+                npm package
+              </a>{' '}
+              and run <i>npx equal</i> to get started. Then input the url of the website you want to
               test. You can use equa11y on either a deployed website or a website hosted locally.
             </p>
           </div>
           <div className="mainChild">
             <h2>equa11y In Action</h2>
             <p>
-              When you first run npx equa11y you will be greated by a simple UI. Here you can input
-              a deployed or locally hosted website. Note: please include "http://" before any
+              When you first run <i>npx equal</i> you will be greated by a simple UI. Here you can
+              input a deployed or locally hosted website. Note: please include "http://" before any
               deployed website. You can manually test different end points of your application by
               providing it in the url.
             </p>

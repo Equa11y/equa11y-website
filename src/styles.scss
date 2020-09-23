@@ -164,7 +164,8 @@ button {
 #innerPage {
   width: 900px;
   border: 3px solid black;
-  height: 1870px;
+  min-height: 1800px;
+  height: auto;
 }
 
 #fakeUrl {
